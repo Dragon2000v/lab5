@@ -17,9 +17,10 @@ class Transposition(object):
         for i in range(len(a)):
             print(*a[i])
 
+def main():
+    x = int(input("Введите розмер: "))
+    y =[list(map(int, input("Введите строку: ").split())) for i in range(x)]
+    Matrix_input.Matrix_len(x,y)
 
-x = int(input("Введите розмер: "))
-y =[list(map(int, input("Введите строку: ").split())) for i in range(x)]
-Matrix_input.Matrix_len(x,y)
-
+main()
 
